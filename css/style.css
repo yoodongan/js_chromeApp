@@ -1,10 +1,9 @@
-@import "css/variables.css";
 body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    
     
 }
 .header{
@@ -56,11 +55,40 @@ a {
 .login-form__name input:focus{
     border-color: var(--main-color);
 }
-
-
 .clock-Box__clock{
     font-size: 50px;
     font-weight: 700;
-    position: relative;
-    top: -360px;
+    animation: clockAni 0.7s ease-in-out forwards;
+}
+.greeting{
+    font-size: 30px;
+    font-weight: 700;
+    animation: greetingAni 0.7s ease-in-out forwards;
+}
+@keyframes greetingAni {
+    from {
+      transform: translateY(10vw);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+@keyframes clockAni {
+    from {
+        transform: translateY(-10vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.welcome-box{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }

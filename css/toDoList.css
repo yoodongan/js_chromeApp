@@ -1,0 +1,21 @@
+.todo-list-Box{
+    padding: 20px 30px;
+    width: 40vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+    font-size: 25px;
+}
+.todo-list li{
+    margin-bottom: 8px;
+    
+}
+.todo-list button{
+    font-size: 15px;
+    
+}
+.todo-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
