@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/toDoList.css">
     <title>Our Beloved Summer</title>
 </head>
 <body>
@@ -31,18 +32,30 @@
         </form>
     </section>
     
-    <section class="clock-Box">
-        <h2 class="clock-Box__clock hidden">00:00</h2>
-    </section>
-    <h3 class="hidden greeting"></h3>
-    <div class="todo-list-Box">
-        <ul id="todo-list">
-        </ul>
+    <div class="welcome-box hidden">
+        <section class="clock-Box">
+            <h2 class="clock-Box__clock ">00:00</h2>
+        </section>
+        <h3 class="greeting"></h3>
+        <form class="todo-form">
+            <input type="text" placeholder="To Do List">
+        </form>
+        <div class="todo-list-Box">
+            <ul class="todo-list">
+            </ul>
+        </div>
+        <div class="quote">
+            <span></span>
+            <span></span>
+        </div>
     </div>
     
 
     <script src ="js/greeting.js"></script>
     <script src ="js/background.js"></script>
     <script src ="js/clock.js"></script>
+    <script src ="js/todo.js"></script>
+    <script src ="js/quote.js"></script>
+    <script src ="js/weather.js"></script>
 </body>
 </html>
