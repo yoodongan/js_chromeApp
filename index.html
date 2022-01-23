@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Our Beloved Summer</title>
+</head>
+<body>
+    <header class="header">
+        <div class="bookmark">
+            <a href="https://naver.com" target="blank">
+                <img src="img/naver.png" width ="40px" height="40px">
+            </a>
+            <a href="https://youtube.com" target="blank">
+                <img src="img/youtube_icon.png" width ="40px" height="40px">
+            </a>
+            <a href="https://www.netflix.com" target="blank">
+                <img src="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico" width ="40px" height="37px">
+            </a>
+        </div>
+        <div class="weather"></div>
+    </header>
+    <section class="login-form">
+        <span class="login-form__hello">Make your own place!</span>
+        <form class="login-form__name">
+            <input type="text" required placeholder="Write your name">
+        </form>
+    </section>
+    
+    <section class="clock-Box">
+        <h2 class="clock-Box__clock hidden">00:00</h2>
+    </section>
+    <h3 class="hidden greeting"></h3>
+    <div class="todo-list-Box">
+        <ul id="todo-list">
+        </ul>
+    </div>
+    
+
+    <script src ="js/greeting.js"></script>
+    <script src ="js/background.js"></script>
+    <script src ="js/clock.js"></script>
+</body>
+</html>
