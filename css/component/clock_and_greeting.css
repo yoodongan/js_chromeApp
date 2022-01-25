@@ -1,0 +1,38 @@
+.welcome-box{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.clock-Box{
+    margin-bottom: 50px;
+}
+
+.clock-Box__clock{
+    font-size: 60px;
+    animation: clockAni 0.7s ease-in-out forwards;
+    font-weight: 800;
+}
+.greeting{
+    font-size: 30px;
+    font-weight: 700;
+    animation: greetingAni 1.5s ease-in-out forwards;
+    margin-bottom: 40px;
+}
+@keyframes greetingAni {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+@keyframes clockAni {
+    from {
+        transform: translateY(-10vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
