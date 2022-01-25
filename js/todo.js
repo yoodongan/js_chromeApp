@@ -1,5 +1,6 @@
 toDoForm = document.querySelector(".todo-form");
 const toDoInput = document.querySelector(".todo-form input");
+const toDoBox = document.querySelector(".todo-list-Box");
 const toDoList = document.querySelector(".todo-list");
 
 let toDos = [];
@@ -51,6 +52,15 @@ if (savedToDos !== null){
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
+    clock.classList.remove(HIDDEN_KEY);
+    toDoInput.classList.remove(HIDDEN_KEY);
+    toDoBox.classList.remove(HIDDEN_KEY);
+}
+else{
+    clock.classList.add(HIDDEN_KEY);
+    toDoInput.classList.add(HIDDEN_KEY);
+    toDoBox.classList.add(HIDDEN_KEY);
+    
 }
 
 

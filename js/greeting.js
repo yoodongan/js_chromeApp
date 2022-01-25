@@ -1,4 +1,3 @@
-
 const loginInput = document.querySelector(".login-form__name input");
 const loginForm = document.querySelector(".login-form");
 const welcomeBox = document.querySelector(".welcome-box");
